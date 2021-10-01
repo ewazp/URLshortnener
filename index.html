@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>URL Shortener</title>
+    <link rel="stylesheet" href="assets/styles/app.css" />
+    <script src="assets/scripts/app.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>URL Shortener</h1>
+    </header>
+   <section id="long">
+     <input type="url" value="" id="long-url" required pattern="http.*:\/\/.*" title="Paste url with http:// or https://" />
+     <div id="long-btn">
+       <button type="button" id="btn-short">Short</button>
+    </div>
+   </section>
+   <section id="result">
+     <h2>Short link:</h2>
+     <h2><span id="current-result"></span></h2>
+   </section>
+  </body>
+</html>
